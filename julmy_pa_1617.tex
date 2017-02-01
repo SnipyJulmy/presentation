@@ -8,6 +8,8 @@
 \usepackage{sourcecodepro}
 \usepackage{graphicx}
 
+\graphicspath{{img/}}
+
 % Scala
 \newminted{scala}{frame=single, framesep=6pt, breaklines=true,
   fontsize=\scriptsize,gobble=2}
@@ -116,22 +118,69 @@
 \begin{frame}
   \frametitle{KlugHDL}
   \begin{center}
-  \includegraphics[width=0.8\textwidth]{hierarchic_component}
+  \includegraphics[width=0.8\textwidth]{vhdl_diagram_example}
+  \end{center}
+\end{frame}
+
+\section{Diagrams modeling}
+
+\begin{frame}
+  \frametitle{Architecture}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{architecture}
   \end{center}
 \end{frame}
 
 \begin{frame}
-  \frametitle{KlugHDL}
+  \frametitle{Visual representation}
+  \begin{itemize}
+  \item Hierarchical layout
+  \item Tree view
+  \item Multiple diagrams
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Hierarchical layout}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{hierarchical_layout}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tree view}
+  \begin{center}
+    \includegraphics[width=0.3\textwidth]{tree_view}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Multiple diagrams}
   \begin{minipage}{0.30\textwidth}
-  \includegraphics[width=1.0\textwidth]{hierarchic_component}
+    \includegraphics[width=1.0\textwidth]{hierarchic_component}
   \end{minipage}
   \hfill
   \begin{minipage}{0.69\textwidth}
-  \includegraphics[width=1.0\textwidth]{hierarchic_component_inside}
+    \includegraphics[width=1.0\textwidth]{hierarchic_component_inside}
   \end{minipage}
 \end{frame}
 
-\section{Diagrams modeling}
+\begin{frame}
+  \frametitle{Model representation}
+  \begin{itemize}
+  \item Model ownes at least one diagram
+  \item Diagram ownes one or more component
+  \item Component ownes some ports
+  \item Connections are between ports
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Model representation}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{class-diagram-intermeditate-model}
+  \end{center}
+\end{frame}
 
 \section{Parsing the AST}
 
